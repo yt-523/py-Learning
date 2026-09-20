@@ -1,4 +1,5 @@
-﻿score = int(input('请输入你的分数：'))
+﻿#if语句
+score = int(input('请输入你的分数：'))
 if score > 680:
     print("欢迎来读书")
 print("---------------------------------")
@@ -61,7 +62,7 @@ else:
     print('不能构成三角形')
 
 print("---------------------------------")
-
+#match语句
 day =input("今天星期几")
 match day:
     case "1":
@@ -91,4 +92,40 @@ match oper:
     case "/"if num2 != 0:
         print(f"{num1} / {num2} = {num1 / num2}")
     case _:
-        print("无效的运算")
+        print("无效的运算符")
+print("---------------------------------")
+
+
+#while循环
+i=0
+while(i<10):
+    print("hello world")
+    i+=1
+else:
+    print("MAN")
+
+#案例：1-100之间的偶数和
+i=1
+sum=0
+while(i<=100):
+    if i%2==0:
+        sum+=i
+    i+=1
+else:
+    print("1-100之间的偶数和为：",sum)
+print("---------------------------------")
+
+#for循环
+msg = "hello-world"
+for i in msg:
+    print(i)
+else:
+    print('MAN')
+
+for i in range(1,10):
+    print(i)
+#案例：1-100之间的奇数和
+sum=0
+for i in range(1,101,2):
+    sum+=i
+print("1-100之间的奇数和为：",sum)
